@@ -1,7 +1,12 @@
+//Write a function that takes a string as an argument and returns the number of characters in the string.
+
 function countCharacters(str) {
   return str.length;
 }
 console.log(countCharacters("Hello"));       
+
+
+//Create a function that converts a given string to uppercase.
 
 function MytoUpperCase(str) {
   let result = '';
@@ -9,9 +14,8 @@ function MytoUpperCase(str) {
   for (let i = 0; i < str.length; i++) {
     let code = str.charCodeAt(i);
 
-    // Եթե փոքրատառ ա (ASCII 'a'–'z' → 97–122)
     if (code >= 97 && code <= 122) {
-      code = code - 32; // Մեծատառ դառնալու համար
+      code = code - 32; 
     }
 
     result += String.fromCharCode(code);
