@@ -1,1 +1,5 @@
-// Homework 4.6.2025
+function countCharacters(str) {
+  return str.length;
+}
+
+
